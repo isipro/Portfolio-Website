@@ -1,0 +1,242 @@
+/* # Resets and General Styles */
+
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    color: rgb(58, 58, 58);
+}
+
+a {
+    text-decoration: none;
+}
+
+main {
+    box-shadow: 0px 10px 40px #e5e5e5;
+}
+
+header {
+    height: 80px;
+    background-color: #222;
+}
+
+
+/* # Containers  */
+/* exercising the basic flex concepts for 3 divs in a container */
+.container {
+    display: flex;
+    flex-wrap: wrap;    
+}
+
+.box{
+    text-align: center;
+    margin: auto;
+}
+
+.logo_container{
+    width: 25%;
+    text-align: left;
+    vertical-align: middle;
+}
+
+.headings_container {
+    width: 75%;
+}
+
+
+/* # Styles */
+
+.logo {
+    display: inline-block;
+    margin-left: 25%;
+    height: 80px;
+    width: 40px;
+}
+
+.main_heading {
+    margin: 0px;
+    padding: 10px 0;
+    color: white;
+    font-weight: 100;
+    font-size: 1.3em;
+}
+
+.main_subheading {
+    margin: 0px;
+    padding: 0px;
+    color: gray;
+    font-weight: 300;
+    font-size: 1.1em;
+}
+
+.featured_work {
+    background-color: rgb(245, 245, 245);
+    border-top: 1px solid #ddd;
+}
+
+.featured_work .heading {
+    padding: 1.5em;
+    text-align: center;
+    margin: 0;
+}
+
+.heading--2 {
+    color: rgb(70, 70, 70);
+    font-weight: 300;
+    font-size: 2em;
+}
+
+.hero {
+    display: block;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.website_feature {
+    display: inline-block;
+    background-color: #f6f6f6;
+    padding: 10px;
+    border: 1px solid #ddd;
+    box-sizing: border-box;
+    width: 272px;
+    box-shadow: 0px 1px 10px #c9c9c9;
+    text-align: left;    
+}
+
+.website_feature img {
+    width: 100%;
+    /* height: 180px; */
+}
+
+.website_feature .title{
+    text-align: center;
+}
+
+
+@media screen and (max-width: 400px) {
+    .hero {
+        background-image: url(../images/site-background_small.png);
+        height: 300px;
+        /* margin: 10px 0 35px 0; */
+    }
+
+    .logo {
+        width: 45px;
+    }
+
+    .box {
+        width: 100%;
+        margin-bottom: 70px;        
+    }
+}
+
+@media screen and (min-width: 401px){
+    .hero {
+        background-image: url(../images/site-background_medium.png);
+        height: 350px;
+    }
+
+    .logo_container {
+        width: 30%;
+    }
+
+    .headings_container {
+        width: 66%;
+    }
+   
+    .box {
+        width: 100%;
+    }
+
+    .website_feature {
+        margin-bottom: 70px;
+        width: 350px;
+    }    
+}
+
+@media screen and (min-width: 768px) {
+    
+    body {
+        max-width: 1366px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .logo {
+        width: 50px;
+    }
+
+    .hero {
+        background-image: url(../images/site-background_medium.png);
+        height: 450px;
+    }    
+
+    .main_heading {
+        font-size: 1.5em;
+    }
+
+    .main_subheading {
+        font-size: 1.3em;
+    }
+
+    .heading--2 {
+        font-size: 2.5em;
+    }
+
+    .box{
+        width: 100%;
+    }
+
+    .website_feature{
+        width: 600px;
+        margin-bottom: 120px;
+    }    
+}
+
+@media screen and (min-width: 1024px){
+
+    .hero {
+        background-image: url(../images/site-background_medium.png);
+    }
+
+    .box {
+        width: 45%;
+    }
+
+    .website_feature {
+        width: 100%;
+    }
+
+    .logo_container {
+        width: 50%;
+    }
+    
+    .headings_container {
+        width: 50%;
+    }
+}
+
+@media screen and (min-width: 1366px){
+    
+    .heading--2 {
+        font-size: 3em;
+    }
+
+    .hero {
+        background-image: url(../images/site-background_large.png);
+        height: 500px;
+    }
+
+    .box{ 
+        width: 30%;
+    }
+
+    .website_feature {
+        margin-bottom: 70px;
+        width: 350px;
+    }
+}
